@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const db = require("./config/mongoose");
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use("/", require("./routes/index_routes"));
